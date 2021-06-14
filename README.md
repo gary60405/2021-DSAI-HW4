@@ -4,17 +4,24 @@ https://drive.google.com/file/d/1SrrT1Bgcrmwspo7bkn3fuZRRx1kMi2TC/view?usp=shari
 
 ## 使用說明:
 
-安裝相依套件
+#### 下載資料檔
+由於有兩份資料檔案資料較大，因此需另外下載 [檔案下載連結](https://drive.google.com/file/d/1T22uUYuXPiemTi9ZY9sXHOgSxoSoXLRF/view?usp=sharing)
+壓縮檔內含「data資料夾」與「data.pkl」，解壓縮直接放在repo的資料夾中即可，如下圖所示：  
+![](https://i.imgur.com/o5NctfJ.png)
+
+
+
+#### 安裝相依套件
 ```
 pip install -r requirements.txt
 ```
 
-模型訓練
+#### 模型訓練
 ```
 python Training.py
 ```
 
-資料前處理
+#### 資料前處理
 ```
 python DataPre-processing.py
 ```
@@ -23,9 +30,9 @@ python DataPre-processing.py
 
 * `DataPre-processing.py` : 關於資料前處理(包含資料清洗、特徵製作與測試資料處理)的程式碼，運用data資料夾內部的檔案來進行製作，最後把特徵保存到`data.pkl`。
 * `Training.py` : 模型訓練與競賽預測，預設為`Lightgbm`的模型訓練，可以透過更改`if __name__ == '__main__'`來更改想要訓練的模型(包含`CatBoost`與`XGBoost`)，訓練結束後會進行競賽預測並且輸出`submission.py`，此檔案為競賽預測繳交檔案。
-* `data.pkl` : 保存特徵的檔案。(檔案過大請另外下載：[連結](https://drive.google.com/file/d/1T22uUYuXPiemTi9ZY9sXHOgSxoSoXLRF/view?usp=sharing))
+* `data.pkl` : 保存特徵的檔案。
 * `submission.csv` : 為競賽最終所繳交的檔案。
-* data資料夾文件說明(檔案過大請另外下載：[連結](https://drive.google.com/drive/folders/1T3xXpwRPw26YVaQN80_ATuBQQKMt0KHS?usp=sharing))
+* `data`資料夾文件說明
     * `sales_train.csv` - the training set. Daily historical data from January 2013 to October 2015.
     * `test.csv` - the test set. You need to forecast the sales for these shops and products for November 2015.
     * `sample_submission.csv` - a sample submission file in the correct format.
