@@ -5,7 +5,7 @@ https://drive.google.com/file/d/1SrrT1Bgcrmwspo7bkn3fuZRRx1kMi2TC/view?usp=shari
 ## 使用說明:
 
 #### 下載資料檔
-由於有兩份資料檔案資料較大，因此需另外下載 [檔案下載連結](https://drive.google.com/file/d/1T22uUYuXPiemTi9ZY9sXHOgSxoSoXLRF/view?usp=sharing)  
+由於有兩份資料檔案資料較大，因此需另外下載 [檔案下載連結](https://drive.google.com/file/d/1TRtzLMAyPws1qzE4OMFPVm_Y7GnB6c43/view?usp=sharing)  
 
 壓縮檔內含「data資料夾」與「data.pkl」，解壓縮直接放在repo的資料夾中即可，如下圖所示：  
 ![](https://i.imgur.com/o5NctfJ.png)
